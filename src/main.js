@@ -10,6 +10,11 @@ import BaiduMap from 'vue-baidu-map'
 // 引入mock.js
 import '../mock/index'
 
+// 引入elementUI的样式
+import ElementUI from 'element-ui'
+import 'element-ui/lib/theme-chalk/index.css'
+Vue.use(ElementUI);
+
 Vue.use(BaiduMap, {
   ak: '百度地图的密钥'
 })
