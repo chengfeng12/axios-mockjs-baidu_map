@@ -15,6 +15,9 @@ import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
 Vue.use(ElementUI);
 
+// 引入Vuex
+import store from './store'
+
 Vue.use(BaiduMap, {
   ak: '百度地图的密钥'
 })
@@ -25,6 +28,7 @@ Vue.config.productionTip = false
 new Vue({
   el: '#app',
   router,
+  store,
   components: { App },
   template: '<App/>'
 })
